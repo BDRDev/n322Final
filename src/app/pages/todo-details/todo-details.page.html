@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+
+  	
+	<ion-button (click)="saveTodo()" defaultHref="/" slot="start"> Back </ion-button>
+  	
+    <ion-title>{{todo.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	
+	<!-- <ion-input required type="text" placeholder="Task" [(ngModel)] = "todo.name">
+
+	</ion-input> -->
+
+	<ion-textarea class='noteSection' [(ngModel)] = "todo.note"></ion-textarea>
+
+
+	<!-- <ion-item>
+		<ion-input required type="number" placeholder="priority" [(ngModel)] = "todo.priority">
+
+		</ion-input>
+	</ion-item> -->
+	
+
+</ion-content>
